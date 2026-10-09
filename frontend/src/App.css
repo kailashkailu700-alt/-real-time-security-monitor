@@ -1,0 +1,136 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid #1e293b;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  font-size: 28px;
+  color: #38bdf8;
+}
+
+header p {
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+}
+
+.card h3 {
+  font-size: 14px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.card .big {
+  font-size: 36px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.card small {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.risk-list {
+  display: flex;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+section h2 {
+  margin-bottom: 12px;
+  color: #38bdf8;
+  font-size: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid #334155;
+}
+
+th {
+  background: #0f172a;
+  color: #94a3b8;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+tr:hover td {
+  background: #293548;
+}
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #334155;
+  color: white;
+}
+
+.badge.online { background: #22c55e; }
+.badge.offline { background: #64748b; }
+
+.empty {
+  color: #64748b;
+  padding: 20px;
+  text-align: center;
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+  border-top: 1px solid #1e293b;
+}
