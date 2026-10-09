@@ -1,1 +1,2 @@
-uvicorn app.main:app --host 0.0.0.0 --port $PORT
+DATABASE_URL=postgresql+psycopg://neondb_owner:npg_VLluMR97afSC@ep-tiny-band-b4s9xvli-pooler.c-6.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+SECRET_KEY=my-super-secret-key-change-this-in-production-12345
